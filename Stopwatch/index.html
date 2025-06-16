@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="top">
+                <div class="timer top-btn">
+                    <i class="fa-solid fa-hourglass"></i>
+                    <div class="text">
+                        Timer
+                    </div>
+                </div>
+                <div class="stopwatch top-btn">
+                    <i class="fa-solid fa-check"></i>
+                    <div class="text">
+                        Stopwatch
+                    </div>
+                </div>
+                <div class="top-icon">
+                    <div class="volume"><i class="fa-solid fa-volume-high icon"></i></div>
+                    <div class="fullscreen"><i class="fa-solid fa-expand icon"></i></div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="watch" id="swtime">
+                    <span id="sec">0</span>.<span id="miliSec">00</span>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="play-btn btn" id="play-btn" onclick="stopWatchStart()"><i class="fa-solid fa-play icon"></i>
+                </div>
+                <div class="pause-btn btn hide" id="pause-btn" onclick="pause()"><i class="fa-solid fa-pause icon"></i></div>
+                <div class="restart btn hide" id="restart" onclick="restart()"><i class="fa-solid fa-rotate-left icon"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #2c303d;
+    color: white;
+    width: 600px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 10px 5px 5px 5px;
+}
+
+.top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: #3a5c8d;
+    border-radius: 20px;
+    margin: 0px 5px;
+}
+
+.top-btn:hover {
+    background-color: #527fbd;
+}
+
+.text {
+    margin-left: 10px;
+}
+
+.top-icon {
+    display: flex;
+    position: absolute;
+    right: 5px;
+}
+
+.top-icon>div {
+    margin-left: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+#sec,
+#miliSec {
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+}
+
+.watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3a5c8d;
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    font-family: monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 50px;
+    background-color: #3a5c8d;
+    border-radius: 20px;
+    width: 100% !important;
+}
+
+.btn:hover {
+    background-color: #527fbd;
+}
+
+.play-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pause-btn,
+.restart {
+    width: 50%;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        margin: 20px;
+    }
+    .top-btn{
+        width: 40%;
+    }
+    .top-icon>div{
+        margin-left: 6px;
+    }
+}
