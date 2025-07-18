@@ -38,11 +38,14 @@ function pause() {
 
 
 function restart() {
-    let btn = Array.from(document.getElementsByClassName("btn"))
-    btn.forEach(element => {
-        element.classList.toggle("hide")
-    });
+    let pauseBtn = document.getElementById("pause-btn")
+    let playBtn = document.getElementById("play-btn")
+    let restsartBtn = document.getElementById("restart")
     
+    playBtn.classList.remove("hide")
+    restsartBtn.classList.add("hide")
+    pauseBtn.classList.add("hide")
+
     clearInterval(interval);
     let sec = document.getElementById("sec");
     let miliSec = document.getElementById("miliSec");
